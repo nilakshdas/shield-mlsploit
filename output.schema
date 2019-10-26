@@ -1,0 +1,48 @@
+{
+  "functions": [
+    {
+      "name": "JPEG",
+      "output_tags": [
+        {
+          "name": "mlsploit-visualize",
+          "type": "str"
+        }
+      ],
+      "has_modified_files": true,
+      "has_extra_files": false
+    },
+    {
+      "name": "SLQ",
+      "output_tags": [
+        {
+          "name": "mlsploit-visualize",
+          "type": "str"
+        }
+      ],
+      "has_modified_files": true,
+      "has_extra_files": false
+    },
+    {
+      "name": "MedianFilter",
+      "output_tags": [
+        {
+          "name": "mlsploit-visualize",
+          "type": "str"
+        }
+      ],
+      "has_modified_files": true,
+      "has_extra_files": false
+    },
+    {
+      "name": "TV-Bregman",
+      "output_tags": [
+        {
+          "name": "mlsploit-visualize",
+          "type": "str"
+        }
+      ],
+      "has_modified_files": true,
+      "has_extra_files": false
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "functions": [
+    {
+      "name": "JPEG",
+      "extensions": [
+        {
+          "extension": "jpg"
+        }
+      ],
+      "doctxt": "This applies JPEG compression to an image to remove high frequency noise.",
+      "options": [
+        {
+          "name": "quality",
+          "type": "int",
+          "default": 75,
+          "required": true,
+          "doctxt": "This is the quality (0 - 100) of the output image. Lower quality means more compression is applied."
+        }
+      ]
+    },
+    {
+      "name": "SLQ",
+      "extensions": [
+        {
+          "extension": "jpg"
+        }
+      ],
+      "doctxt": "This applies Stochastic Local Quantization with JPEG qualities 20, 40, 60, 80 as defined in [1].\n\nReferences\n[1] Nilaksh Das, Madhuri Shanbhogue, Shang-Tse Chen, Fred Hohman, Siwei Li, Li Chen, Michael E. Kounavis, and Duen Horng Chau. 2018. SHIELD: Fast, Practical Defense and Vaccination for Deep Learning using JPEG Compression. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD '18). ACM, New York, NY, USA, 196-204. https://arxiv.org/abs/1802.06816",
+      "options": []
+    },
+    {
+      "name": "MedianFilter",
+      "extensions": [
+        {
+          "extension": "jpg"
+        }
+      ],
+      "doctxt": "This applies a median filter of a given window size to the image.",
+      "options": [
+        {
+          "name": "size",
+          "type": "int",
+          "default": 3,
+          "required": true,
+          "doctxt": "The window size to be used while appying the median filter. Larger the number, more pixels in the neighborhood will be used for calculating the median."
+        }
+      ]
+    },
+    {
+      "name": "TV-Bregman",
+      "extensions": [
+        {
+          "extension": "jpg"
+        }
+      ],
+      "doctxt": "This applies the split-Bregman optimization for the Total Variational Denoising technique for removing noise from images",
+      "options": [
+        {
+          "name": "weight",
+          "type": "float",
+          "default": 30.0,
+          "required": true,
+          "doctxt": "This is the denoising weight. The smaller the weight, the more denoising (at the expense of less similarity to the input)."
+        }
+      ]
+    }
+  ],
+  "doctxt": "SHIELD contains image preprocessing techniques that can remove adversarial perturbations.",
+  "tagline": "Fast, Practical Defense for Deep Learning"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "JPEG",
+  "options": {"quality": 75},
+  "num_files": 1,
+  "files": ["example.jpg"],
+  "tags": [{}]
+}
