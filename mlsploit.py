@@ -165,10 +165,10 @@ class _InputFile(object):
 
         tags = tags or dict()
         tags = dict(tags)
-        for tag, val in tags.items():
-            if type(tag) is not str:
-                raise ValueError('Cannot parse tags '
-                                 'for input file "%s"' % path)
+        # for tag, val in tags.items():
+        #     if type(tag) is not str:
+        #         raise ValueError('Cannot parse tags '
+        #                          'for input file "%s"' % path)
 
         self.path = path
         self.tags = tags
