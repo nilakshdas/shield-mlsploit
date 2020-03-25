@@ -24,6 +24,6 @@ output_image = defense_class.apply(image, **defense_options)
 output_file_path = Job.make_output_filepath(input_file_name)
 output_image.save(output_file_path)
 Job.add_output_file(
-  output_file_path, is_modified=True,
-  tags={'mlsploit-visualize': 'image'})
+    output_file_path, is_modified=True, tags={"mlsploit-visualize": "image"}
+)
 Job.commit_output()
