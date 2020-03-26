@@ -9,7 +9,7 @@
         }
       ],
       "has_modified_files": true,
-      "has_extra_files": false
+      "has_extra_files": true
     },
     {
       "name": "SLQ",
@@ -20,7 +20,7 @@
         }
       ],
       "has_modified_files": true,
-      "has_extra_files": false
+      "has_extra_files": true
     },
     {
       "name": "MedianFilter",
@@ -31,7 +31,7 @@
         }
       ],
       "has_modified_files": true,
-      "has_extra_files": false
+      "has_extra_files": true
     },
     {
       "name": "TV-Bregman",
@@ -42,7 +42,7 @@
         }
       ],
       "has_modified_files": true,
-      "has_extra_files": false
+      "has_extra_files": true
     }
   ]
 }

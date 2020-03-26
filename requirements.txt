@@ -1,3 +1,4 @@
+git+https://github.com/mlsploit/mlsploit-py.git
 numpy
 Pillow
 scikit-image

@@ -39,13 +39,16 @@ def main():
     input_schema[TAGLINE] = "Fast, Practical Defense for Deep Learning"
 
     for name, defense in DEFENSE_MAP.items():
-        fn_input_schema = {"name": name, "extensions": [{"extension": "jpg"}]}
+        fn_input_schema = {
+            "name": name,
+            "extensions": [{"extension": "jpg"}, {"extension": "db"}],
+        }
 
         fn_output_schema = {
             "name": name,
             "output_tags": [{"name": "mlsploit-visualize", "type": "str"}],
             "has_modified_files": True,
-            "has_extra_files": False,
+            "has_extra_files": True,
         }
 
         fn_input_schema[DOCTXT] = _process_doctxt(defense.doctxt)

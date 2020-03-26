@@ -42,7 +42,7 @@ class JPEGDefense(Defense):
         return _get_image_from_arr(x)
 
 
-class SLQDefense(object):
+class SLQDefense(Defense):
     doctxt = """
 This applies Stochastic Local Quantization with JPEG qualities 20, 40, 60, 80 as defined in [1].
 
@@ -83,6 +83,7 @@ References
             (patch_n * patch_size, patch_m * patch_size),
             name="random_layer_indices",
         )[0, :, :, 0][:n, :m]
+
         indices = tf.transpose(
             tf.stack([Z, R, C]), perm=[1, 2, 0], name="random_layer_indices"
         )
@@ -103,7 +104,7 @@ References
         return _get_image_from_arr(x_slq)
 
 
-class MedianFilterDefense(object):
+class MedianFilterDefense(Defense):
     doctxt = "This applies a median filter of a given window size to the image."
     option_doctxts = {
         "size": (
@@ -120,7 +121,7 @@ class MedianFilterDefense(object):
         return _get_image_from_arr(image)
 
 
-class TVBregmanDefense(object):
+class TVBregmanDefense(Defense):
     doctxt = (
         "This applies the split-Bregman optimization for the "
         "Total Variational Denoising technique for removing noise from images"
